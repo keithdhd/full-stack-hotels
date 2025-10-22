@@ -20,14 +20,19 @@ const HotelCard = styled.div`
   margin-bottom: 10px;
 `
 
+
 const Title = styled.h2`
    color: #333; 
-`
+   `
 
 const Description = styled.p`
   color: #666;
   line-height: 1.5; 
-`
+  `
+const Price = styled.h3`
+  color:  #333;
+  line-height: 2;
+` 
 
 function Hotel({ hotelDetails, onBooking, isBooked }) {
 
@@ -39,6 +44,7 @@ function Hotel({ hotelDetails, onBooking, isBooked }) {
     <HotelCard>
       <Title>{hotelDetails.name}</Title>
       <Description>{hotelDetails.description}</Description>
+      <Price>{hotelDetails.price}€</Price>
       <StyledButton
         onClick={handleClick}
         $isBooked={isBooked}
