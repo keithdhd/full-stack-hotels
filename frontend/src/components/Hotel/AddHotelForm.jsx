@@ -54,7 +54,7 @@ function AddHotelForm({ addHotel }) {
 
             <label>
                 Price:
-                <input type="number" name="price" />
+                <input type="number" name="price" step=".01" />
             </label>
 
             <label>
