@@ -11,7 +11,7 @@ const StyledButton = styled.button`
   font-size: 16px;
 `
 
-const HotelCard = styled.div`
+const HotelCard = styled.li`
   border: 2px solid #ccc;
   padding: 20px;
   border-radius: 10px;

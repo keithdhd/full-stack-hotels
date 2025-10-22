@@ -44,20 +44,20 @@ function AddHotelForm({ addHotel }) {
     }
 
     return (
-        <Form onSubmit={handleSubmit} >
+        <Form onSubmit={handleSubmit} id="hotel-form" >
             <label>
                 Hotel Name:
-                <input type="text" name="name" />
+                <input type="text" name="name" id="name-input" />
             </label>
 
             <label>
                 Price:
-                <input type="number" name="price" step=".01" />
+                <input type="number" name="price" id="price-input" />
             </label>
 
             <label>
                 Description:
-                <textarea name="description"></textarea>
+                <textarea name="description" id="description-input" ></textarea>
             </label>
 
             <button>Submit Hotel</button>
