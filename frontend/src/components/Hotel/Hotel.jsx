@@ -20,6 +20,7 @@ const HotelCard = styled.div`
   margin-bottom: 10px;
 `
 
+
 const Title = styled.h2`
    color: inherit; 
    margin: 0 0 8px;
@@ -42,11 +43,12 @@ function Hotel({ hotelDetails, onBooking, isBooked }) {
     <HotelCard>
       <Title>{hotelDetails.name}</Title>
       <Description>{hotelDetails.description}</Description>
+      <Price>{hotelDetails.price}€</Price>
       <StyledButton
         onClick={handleClick}
         $isBooked={isBooked}
       >
-        {isBooked ? 'Cancel' : 'Book now!'}
+        {isBooked ? 'Cancel' : 'Add to trip'}
       </StyledButton>
     </HotelCard>
   )
