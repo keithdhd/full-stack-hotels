@@ -21,12 +21,15 @@ const HotelCard = styled.div`
 `
 
 const Title = styled.h2`
-   color: #333; 
+   color: inherit; 
+   margin: 0 0 8px;
 `
 
 const Description = styled.p`
-  color: #666;
+  color: inherit;
+  opacity: 0.8;
   line-height: 1.5; 
+  margin-bottom: 16px;
 `
 
 function Hotel({ hotelDetails, onBooking, isBooked }) {
