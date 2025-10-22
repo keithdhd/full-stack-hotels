@@ -55,7 +55,9 @@ const HotelContainer = () => {
         <>
             <AddHotelForm addHotel={addHotel} />
             <BookedHotels hotels={hotels.filter((hotel) => bookedHotelIds.includes(hotel.id))} />
+            <ul id="hotels-list">
             {hotelsComponents}
+            </ul>
         </>
     )
 
