@@ -22,7 +22,7 @@ function App() {
     <Container theme={theme}>
       <ThemeContext value={{ theme, setTheme }}>
         <ToggleTheme />
-        <h1>Hotels</h1>
+        <h1>BookSmart</h1>
         <HotelContainer />
       </ThemeContext>
     </Container>
