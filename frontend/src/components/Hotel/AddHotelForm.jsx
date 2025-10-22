@@ -21,9 +21,11 @@ const Form = styled.form`
             padding: 10px;
             font-size: 1rem;
             background-color: #4CAF50;
+            flex-direction: row-reverse;
             color: white;
             border: none;
             border-radius: 5px;
+            align-self: flex-end;
             cursor: pointer;
             &:hover {
                 background-color: #45a049;
