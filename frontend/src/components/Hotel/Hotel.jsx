@@ -43,7 +43,7 @@ function Hotel({ hotelDetails, onBooking, isBooked }) {
         onClick={handleClick}
         $isBooked={isBooked}
       >
-        {isBooked ? 'Cancel' : 'Reserve your room!'}
+        {isBooked ? 'Cancel' : 'Add to trip'}
       </StyledButton>
     </HotelCard>
   )
