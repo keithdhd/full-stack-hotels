@@ -33,6 +33,10 @@ const Description = styled.p`
   margin-bottom: 16px;
 `
 
+const Price = styled.h3`
+  color: inherit;
+`
+
 function Hotel({ hotelDetails, onBooking, isBooked }) {
 
   const handleClick = () => {
